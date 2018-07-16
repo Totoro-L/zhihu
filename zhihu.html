@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>知乎</title>
+	<link type="text/css" rel="stylesheet" href="zhihu.css" />
+</head>
+
+<body>
+<div class="title">
+	<div class="title1">
+		<h1>知乎</h1>
+		<ul>
+			<li>首页</li>
+			<li>发现</li>
+			<li>话题</li>
+		</ul>
+		<span>
+			<input type="text" placeholder="搜索你感兴趣的内容..."/>
+			<img src="images/u1.png" width="22px" height="22px"/>
+		</span>
+		<button class="title-btn1" type="button">登录</button>
+		<button class="title-btn2" type="button">加入知乎</button>
+	</div>
+	<div class="title2">
+		<h1>WebSocket 是什么原理？为什么可以实现持久连接？</h1>
+		<button type="button" class="title-btn2">关注问题</button>
+		<button type="button" class="title-btn1">写答案</button>
+	</div>
+</div>
+<div class="head">
+	<div class="head-left">
+		<div class="head1">
+			<button type="button">HTML5</button>
+			<button type="button">HTTP</button>
+			<button type="button">WebSocket</button>
+		</div>
+		<h2>问题名称</h2>
+		<p>
+			<span class="Ques-del">
+				WebSocket是HTML5出的东西 也就是说HTTP协议没有变化 但HTTP是不支持持久连接的（长连接，循环连接的不算）<br/>
+				或者说WebSocket干<br/>
+				**********************************<br/>
+				*************************<br/>
+				*************************<br/>
+				**********************************************<br/>
+				*************************<br/>
+				*****************************
+			</span>
+			<button class="head-open" type="button">
+				<span>显示全部</span>
+				<span class="arr-wrapper">
+					<span class="arr-up1" id="head-arr1"></span><span class="arr-up2" id="head-arr2"></span>
+				</span>
+			</button>
+		</p>
+	</div>
+	<div class="head-right">
+		<div class="head-right-div">
+			<div>关注者</div>
+			<strong>6,142</strong>
+		</div>
+		<div class="head-right-div">
+			<div>被浏览</div>
+			<strong>16,142</strong>
+		</div>
+	</div>
+	<div class="head2">
+	<div class="head2-wrapper">
+		<button type="button" class="title-btn2">关注问题</button>
+		<button type="button" class="title-btn1">写回答</button>
+		<span class="head2-wrapper-tool"><img src="images/u7.png" width="20px" height="20px">13条评论</span>
+		<span class="head2-wrapper-tool"><img src="images/u9.png" width="16px" height="16px">分享</span>
+		<span class="head2-wrapper-tool"><img src="images/u2.png" width="16px" height="16px">邀请回答</span>
+		<svg class="head-dots" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" width="20px" height="20px">
+		  <circle cx="4" cy="12" r="2" fill="#999"/>
+		  <circle cx="11" cy="12" r="2" fill="#999"/>
+		  <circle cx="18" cy="12" r="2" fill="#999"/>
+		</svg>
+		<button class="head-fold" type="button">
+			<span>收起</span>
+			<span class="arr-wrapper">
+				<span class="arr-down1" id="head-arr3"></span><span class="arr-down2" id="head-arr4"></span>
+			</span>
+		</button>
+	</div>
+	</div>
+</div>
+<div class="main">
+<div class="main-left">
+	<h3>55个回答
+		<button class="main-list" type="button">
+			<span class="main-list-span">默认排序</span>
+			<span class="arr-double">
+				<span class="arr-up1" id="main-arr1"></span><span class="arr-up2" id="main-arr2"></span>
+				<span class="arr-down1" id="main-arr3"></span><span class="arr-down2" id="main-arr4"></span>
+			</span>
+		</button>
+	</h3>
+	<div class="user-wrapper">
+		<div class="filter"></div>
+		<div class="user">
+			<div class="main-title">
+				<div class="main-title-img"><img src="images/user.jpg" width="45px" height="45px"></div>
+				<div class="main-title-div">
+					<div>名字</div>
+					<div>。。。。。。。。。。。。</div>
+				</div>
+			</div>
+			
+			<button class="main-title-btn">637238人赞同了该回答</button>
+			<p class="main-p">作者：Ovear
+				链接：https://www.zhihu.com/question/20215561/answer/40316953
+				来源：知乎
+				著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+				额。。最高票答案没答到点子上，最后怎么跑到Nodejs上去了。。Websocket只是协议而已。。我一个个来回答吧一、WebSocket是HTML5出的东西（协议），也就是说HTTP协议没有变化，或者说没关系，但HTTP是不支持持久连接的（长连接，循环连接的不算）首先HTTP有1.1和1.0之说，也就是所谓的keep-alive，把多个HTTP请求合并为一个，但是Websocket其实是一个新协议，跟HTTP协议基本没有关系，只是为了兼容现有浏览器的握手规范而已，也就是说它是HTTP协议上的一种补充可以通过这样一张图理解<img src="https://pic1.zhimg.com/6651f2f811ec133b0e6d7e6d0e194b4c_b.jpg" data-rawwidth="374" data-rawheight="133" class="content_image" width="374">有交集，但是并不是全部。另外Html5是指的一系列新的API，或者说新规范，新技术。Http协议本身只有1.0和1.1，而且跟Html本身没有直接关系。。通俗来说，你可以用HTTP协议传输非Html数据，就是这样=。=再简单来说，层级不一样。二、Websocket是什么样的协议，具体有什么优点首先，Websocket是一个持久化的协议，相对于HTTP这种非持久的协议来说。简单的举个例子吧，用目前应用比较广泛的PHP生命周期来解释。1) HTTP的生命周期通过Request来界定，也就是一个Request 一个Response，那么在HTTP1.0中，这次HTTP请求就结束了。在HTTP1.1中进行了改进，使得有一个keep-alive，也就是说，在一个HTTP连接中，可以发送多个Request，接收多个Response。但是请记住 Request = Response ， 在HTTP中永远是这样，也就是说一个request只能有一个response。而且这个response也是被动的，不能主动发起。教练，你BB了这么多，跟Websocket有什么关系呢？_(:з」∠)_好吧，我正准备说Websocket呢。。首先Websocket是基于HTTP协议的，或者说借用了HTTP的协议来完成一部分握手。在握手阶段是一样的-------以下涉及专业技术内容，不想看的可以跳过lol:，或者只看加黑内容--------首先我们来看个典型的Websocket握手（借用Wikipedia的。。）GET /chat HTTP/1.1
+				Host: server.example.com
+				Upgrade: websocket
+				Connection: Upgrade
+				Sec-WebSocket-Key: x3JJHMbDL1EzLkh9GBhXDw==
+				Sec-WebSocket-Protocol: chat, superchat
+				Sec-WebSocket-Version: 13
+				Origin: http://example.com
+				熟悉HTTP的童鞋可能发现了，这段类似HTTP协议的握手请求中，多了几个东西。我会顺便讲解下作用。Upgrade: websocket
+				Connection: Upgrade
+				这个就是Websocket的核心了，告诉Apache、Nginx等服务器：注意啦，窝发起的是Websocket协议，快点帮我找到对应的助理处理~不是那个老土的HTTP。
+				但是Websocket只需要一次HTTP握手，所以说整个通讯过程是建立在一次连接/状态中，也就避免了HTTP的非状态性，服务端会一直知道你的信息，直到你关闭请求，这样就解决了接线员要反复解析HTTP协议，还要查看identity info的信息。同时由客户主动询问，转换为服务器（推送）有信息的时候就发送（当然客户端还是等主动发送信息过来的。。），没有信息的时候就交给接线员（Nginx），不需要占用本身速度就慢的客服（Handler）了--------------------至于怎么在不支持Websocket的客户端上使用Websocket。。答案是：不能但是可以通过上面说的 long poll 和 ajax 轮询来 模拟出类似的效果-----_(:з」∠)_两天写了两篇科普类文章。。好累OAQ，求赞。。对啦，如果有错误，欢迎大家在底下留言指出噢~
+
+				作者：Ovear
+				链接：https://www.zhihu.com/question/20215561/answer/40316953
+				来源：知乎
+				著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+			</p>
+			<div class="main-bottom">
+				<span>&nbsp&nbsp&nbsp&nbsp&nbsp底部菜单</span>
+				<button class="main-bottom-fold" type="button">
+					<span>收起</span>
+					<span class="arr-wrapper">
+						<span class="arr-down1" id="main-bottom-arr1"></span><span class="arr-down2" id="main-bottom-arr2"></span>
+					</span>
+				</button>
+			</div>
+		</div>
+		<div class="main-bottom2">
+				&nbsp&nbsp&nbsp&nbsp&nbsp底部菜单
+		</div>
+	</div>
+</div>
+<div class="main-right">
+	blah~
+</div>
+</div>
+<!-- 回到顶部箭头 -->
+<ul class="return">
+	<li>
+		<span class="return-top">
+			建议反馈
+		</span>
+		<span class="return-arr">
+			<svg class="Zi Zi--Feedback" title="建议反馈" fill="#999" viewBox="0 0 24 24" width="24" height="24"><path d="M19.99 6.99L18 5s-1-1-2-1H8C7 4 6 5 6 5L4 7S3 8 3 9v9s0 2 2.002 2H19c2 0 2-2 2-2V9c0-1-1.01-2.01-1.01-2.01zM16.5 5.5L19 8H5l2.5-2.5h9zm-2 5.5s.5 0 .5.5-.5.5-.5.5h-5s-.5 0-.5-.5.5-.5.5-.5h5z"></path></svg>
+		</span>
+	</li>
+	<li class="return-top-li">
+		<span class="return-top">
+			回到顶部
+		</span>
+		<span class="return-arr">
+			<svg class="Zi Zi--BackToTop" title="回到顶部" fill="#999" viewBox="0 0 24 24" width="24" height="24"><path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path></svg>
+		</span>
+	</li>
+</ul>
+
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="zhihu.js"></script>
+
+</body>
+</html>
